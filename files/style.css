@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FF9A8D;
+    width: auto;
+}
+
+.page-header {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(double-bubble-dark/double-bubble-dark.png);
+}
+
+.homescreen-video {
+    width: 80%;
+    height: 50vh;
+}
+
+p {
+    font-size: .9rem;
+}
+
+h1 {
+    grid-area: header;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+a img {
+    width: 200px;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+                            Navigation
+--------------------------------------------------------------*/
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 10px;
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    background-color: #4A536B;
+    color: white;
+}
+
+.navbar-links ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li:hover {
+    background-color: #AED6DC;
+    color: black;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: .75rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: black;
+}
+
+.home-link a:hover {
+    background-color: #4A536B;
+}
+
+/*--------------------------------------------------------------
+                        Frag ID Table
+--------------------------------------------------------------*/
+
+.frag-table {
+    float: left;
+    border: 1px solid black;
+    padding: 1rem;
+    width: auto;
+    text-align: center;
+    margin: 2em 2em 1em 0;
+    background-color: lightgray;
+}
+
+.frag-table th {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.frag-table td {
+    text-align: left;
+    font-size: .95rem;
+}
+
+.frag-table a {
+    text-decoration: none;
+}
+
+.frag-table a:hover {
+    text-decoration: underline;
+}
+
+.frag-table a:visited {
+    color: blue;
+}
+
+/*--------------------------------------------------------------
+                        General Table
+--------------------------------------------------------------*/
+
+.gen-table {
+    float: right;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 20%;
+    margin: 2em .5em .5em 2em;
+    background-color: lightgray;
+}
+
+table th {
+    font-size: 75%;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.5em;
+    max-width: 200px;
+}
+
+.main-header {
+    background-color: #4A536B;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.header {
+    background-color: #4A536B;
+    color: white;
+    text-align: center;
+    column-span: all;
+}
+
+table td {
+    font-size: 75%;
+}
+
+table img {
+    width: 200px;
+    height: auto;
+}
+
+.info {
+    clear: left;
+}
+
+.info li {
+    font-size: .9rem;
+}
+
+/*------------------------------------------------------------*/
+
+.underline {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    padding: 0 2rem 5rem 2rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FF9A8D;
+    font-size: .6em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: blue;
+}
+
+#wrapper {
+    display: grid;
+    background-color: white;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 95vh;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px black;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "footer footer";
+}
+
+
+@media screen and (max-width: 650px) {
+    #wrapper {
+        min-width: 300px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+        box-shadow: none;
+    }
+
+    main {
+        padding: 0 0 5rem 0;
+    }
+
+    .navbar-links {
+        width: 100%;
+    }
+
+    .frag-table {
+        float: left;
+        margin-left: 12px;
+    }
+
+    .gen-table {
+        clear: both;
+        float: left;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin: 2em 0 .5em 12px;
+    }
+
+    .info {
+        margin-left: 12px;
+    }
+
+    iframe {
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+    #wrapper {
+        min-width: 600px;
+    }
+    
+    .freg-table {
+        float: left;
+    }
+
+    .gen-table {
+        margin-left: 0;
+        clear: both;
+        float: left;
+    }
+
+    .info {
+        clear: both;
+    }
+}
