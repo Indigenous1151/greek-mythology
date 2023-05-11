@@ -194,6 +194,21 @@ main {
     padding: 0 2rem 5rem 2rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-align {
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
+.right-align {
+    float: right;
+    padding: 0px 0px 0px 10px;
+}
+
 footer {
     grid-area: footer;
     background-color: #FF9A8D;
