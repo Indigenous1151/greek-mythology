@@ -41,6 +41,20 @@ a img {
     height: auto;
 }
 
+.home-img {
+    height: 200px;
+    width: auto;
+    background: url("images/greek-myth-lambda.png") no-repeat;
+    background-position: center center;
+    display: inline-block;
+    
+}
+
+.home-img:hover {
+    background: url("images/greek-myth-lambda-hover.png") no-repeat;
+    background-position: center center;
+}
+
 /*--------------------------------------------------------------
                             Navigation
 --------------------------------------------------------------*/
@@ -67,6 +81,7 @@ nav {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-width: 200px;
 }
 
 .navbar-links li {
