@@ -3,7 +3,8 @@
 }
 
 header {
-    background-color: #FF9A8D;
+    color: white;
+    background-color: #054385;
     width: auto;
 }
 
@@ -205,7 +206,7 @@ table img {
 
 main {
     grid-area: main;
-    background-color: white;
+    background-color: #F6ECDB;
     padding: 0 2rem 5rem 2rem;
 }
 
@@ -226,7 +227,8 @@ img {
 
 footer {
     grid-area: footer;
-    background-color: #FF9A8D;
+    color: white;
+    background-color: #054385;
     font-size: .6em;
     font-style: italic;
     text-align: center;
@@ -235,14 +237,16 @@ footer {
 
 footer a {
     text-decoration: none;
+    color: lightgray;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: gray;
 }
 
 footer a:visited {
-    color: blue;
+    color: purple;
 }
 
 #wrapper {
