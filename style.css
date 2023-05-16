@@ -206,23 +206,38 @@ table img {
 
 main {
     grid-area: main;
-    background-color: #F6ECDB;
+    background-color: #FFFBEF;
     padding: 0 2rem 5rem 2rem;
 }
 
 img {
     max-width: 100%;
+    max-width: 400px;
     height: auto;
+}
+
+figure {
+    display: inline-block;
+    background-color: #D9CAB2;
+    border: 1px solid black;
+}
+
+figure img {
+    vertical-align: top;
+    border-bottom: 1px solid black;
+}
+
+figure figcaption {
+    text-align: center;
+    padding-top: 5px;
 }
 
 .left-align {
     float: left;
-    padding: 0px 10px 0px 0px;
 }
 
 .right-align {
     float: right;
-    padding: 0px 0px 0px 10px;
 }
 
 footer {
